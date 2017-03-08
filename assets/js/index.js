@@ -16,23 +16,17 @@ var vrView;
 
 // All the scenes for the experience
 var scenes = {
-  dolphins: {
-    image: 'dolphins.jpg',
-    preview: 'dolphins-preview.jpg',
+  kivuli: {
+    image: '/assets/vr/kivuli.vr-converted.jpg',
+   // preview: 'kivuli-preview.jpg',
     hotspots: {
-      whaleRight: {
-        pitch: 0,
-        yaw: 110,
-        radius: 0.05,
-        distance: 1
-      },
-      whaleLeft: {
+      artisan: {
         pitch: 0,
         yaw: 150,
         radius: 0.05,
         distance: 1
       },
-      walrus: {
+      kivuliparking: {
         pitch: 0,
         yaw: 170,
         radius: 0.05,
@@ -40,9 +34,9 @@ var scenes = {
       }
     }
   },
-  whaleLeft: {
-    image: 'whale-left.jpg',
-    preview: 'whale-left-preview.jpg',
+  artisan: {
+    image: '/assets/vr/artisan.vr-converted.jpg',
+    //preview: 'whale-left-preview.jpg',
     hotspots: {
       whaleRight: {
         pitch: 0,
@@ -50,13 +44,13 @@ var scenes = {
         radius: 0.05,
         distance: 1
       },
-      dolphins: {
+      kivuli: {
         pitch: 0,
         yaw: 110,
         radius: 0.05,
         distance: 1
       },
-      walrus: {
+      kivuliparking: {
         pitch: 0,
         yaw: 30,
         radius: 0.05,
@@ -64,47 +58,18 @@ var scenes = {
       }
     }
   },
-  whaleRight: {
-    image: 'whale-right.jpg',
-    preview: 'whale-right-preview.jpg',
+
+  kivuliparking: {
+    image: '/assets/vr/kivuliparking.vr-converted.jpg',
+   // preview: 'kivuliparking-preview.jpg',
     hotspots: {
-      dolphins: {
-        pitch: 0,
-        yaw: 305,
-        radius: 0.05,
-        distance: 1
-      },
-      whaleLeft: {
-        pitch: 0,
-        yaw: 180,
-        radius: 0.05,
-        distance: 1
-      },
-      walrus: {
-        pitch: 0,
-        yaw: 210,
-        radius: 0.05,
-        distance: 1
-      }
-    }
-  },
-  walrus: {
-    image: 'walrus.jpg',
-    preview: 'walrus-preview.jpg',
-    hotspots: {
-      whaleLeft: {
+      artisan: {
         pitch: 0,
         yaw: 20,
         radius: 0.05,
         distance: 1
       },
-      whaleRight: {
-        pitch: 0,
-        yaw: 340,
-        radius: 0.05,
-        distance: 1
-      },
-      dolphins: {
+      kivuli: {
         pitch: 0,
         yaw: 320,
         radius: 0.05,
@@ -130,7 +95,7 @@ function onLoad() {
 
 function onVRViewReady(e) {
   console.log('onVRViewReady');
-  loadScene('walrus');
+  loadScene('kivuliparking');
 }
 
 function onModeChange(e) {
