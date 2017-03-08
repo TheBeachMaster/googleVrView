@@ -17,7 +17,7 @@ var vrView;
 // All the scenes for the experience
 var scenes = {
   kivuli: {
-    image: 'assets/vr/kivuli.vr-converted.jpg',
+    image: '/assets/vr/kivuli.vr-converted.jpg',
    // preview: 'kivuli-preview.jpg',
     hotspots: {
       artisan: {
@@ -35,7 +35,7 @@ var scenes = {
     }
   },
   artisan: {
-    image: 'assets/vr/artisan.vr-converted.jpg',
+    image: '/assets/vr/artisan.vr-converted.jpg',
     //preview: 'whale-left-preview.jpg',
     hotspots: {
       whaleRight: {
@@ -60,7 +60,7 @@ var scenes = {
   },
 
   kivuliparking: {
-    image: 'assets/vr/kivuliparking.vr-converted.jpg',
+    image: '/assets/vr/kivuliparking.vr-converted.jpg',
    // preview: 'kivuliparking-preview.jpg',
     hotspots: {
       artisan: {
